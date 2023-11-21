@@ -1,25 +1,25 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGINA DE INICIO</title>
+    <title>EXAMENES</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="icon" href="favicon.png" type="image/x-icon"> 
-<style>
+    <style>
         /* Estilos globales */
         body {
             font-family: 'Verdana', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-	    background-image: url('fondo1.jpg');
-	    background-size: cover; 
-	    background-repeat: no-repeat; 
-	    background-attachment: fixed; 
+            background-image: url('fondo1.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
         }
 
         /* Encabezado */
@@ -38,6 +38,47 @@
             height: auto;
         }
 
+        .menu-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .burger-menu {
+            cursor: pointer;
+            margin-right: 15px;
+            display: none; /* Oculta el botón de hamburguesa por defecto en pantallas grandes */
+        }
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .mobile-menu a {
+            color: #FFF;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        .mobile-menu a:hover {
+            background-color: #555;
+        }
+
         .header a {
             color: #FFF;
             text-decoration: none;
@@ -53,36 +94,7 @@
             border: 1px solid #C11A1A;
         }
 
-        /* Tabla */
-        .table-container {
-            margin: 20px;
-            width: 100%;
-            overflow: auto;
-            max-height: 500px;
-        }
-
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .table th,
-        .table td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #ccc;
-        }
-
-        .table th {
-            background-color: #333;
-            color: #fff;
-            position: sticky;
-            top: 0;
-        }
-
-        /* Botones */
+        /* botones */
         .button-container {
             text-align: center;
             margin: 20px;
@@ -103,51 +115,79 @@
             background-color: #1e7e34;
         }
 
-        /* Pie de Página */
-          footer {
-	    background-color: rgba(255, 255, 255, 0);
-	    position: absolute;
+        /* PP */      
+        footer {
+            background-color: rgba(255, 255, 255, 0);
+            position: absolute;
             color: #000000;
             padding: 10px 0;
             text-align: center;
-	    width: 100%;
-  	    height: 40px;
+            width: 100%;
+            height: 40px;
             box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
         }
-	.container 
-	{
+
+        /* CONTENIDO */
+        .container {
             max-width: 800px;
+            min-width: auto;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgb(223, 128, 0);
-		border-radius: 20px; 
+            border-radius: 20px; 
         }
-.rotating-element {
-  width: 800px;
-  height: 30px;
-  line-height: 300px;
-  transition: transform 0.5s ease-in-out; 
-}
 
-.rotating-element:hover {
-  transform: rotateY(360deg); 
-    
-.container h2{
-    background-image: linear-gradient(to right, #FF3300, #FF6600, #FF9900, #FFCC00, #FFFF00);
-    -webkit-background-clip: text;
-    color: transparent;
-}
+        .container a {
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
 
-@media only screen and (min-width: 480px) and (max-width: 991px)
-	{
+        .container a:link {
+            color: #000000;
+        }
+
+        .container a:visited {
+            color: #000000;
+        }
+
+        .container a:focus,
+        .container a:hover {
+            border-buttom: 1px solid;
+        }
+
+        .container a:active {
+            color:purple;
+        }
+
+        .button1 {
+            display: inline-block;
+            padding: 10px 20px;
+            background: radial-gradient(200px top, ellipse,  #FF0000, #FF6100, #FFAA00);
+            background: -webkit-radial-gradient(200px top, ellipse,  #FF0000, #FF6100, #FFAA00);
+            background: -moz-radial-gradient(200px top, ellipse,  #FF0000, #FF6100, #FFAA00);
+            background: -o-radial-gradient(200px top, ellipse,  #FF0000, #FF6100, #FFAA00);
+            background: -ms-radial-gradient(200px top, ellipse,  #FF0000, #FF6100, #FFAA00);
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .button1:hover {
+            background: -webkit-radial-gradient(200px top, ellipse,  #FFAA00, #FF6100, #FF0000);
+        }
+
+        @media only screen and (min-width: 480px) and (max-width: 991px) {
             .header {
                 flex-direction: column;
                 text-align: center;
+                align-items: center; 
             }
 
             .header h1 {
                 margin-top: 10px;
+                margin-bottom: 10px; 
             }
 
             .header .logo img {
@@ -160,56 +200,80 @@
 
             .container {
                 padding: 10px;
-		 height: auto;
-		width: auto;
-		display:none;
-            }        
-	}
-</style>
+                height: auto;
+                width: auto;
+            }
+        }
 
+        @media only screen and (max-width: 991px) {
+            .header a {
+                display: none; /* Oculta los enlaces estilo botón en pantallas pequeñas */
+            }
+
+            .burger-menu {
+                display: block; /* Muestra el botón de hamburguesa en pantallas pequeñas */
+            }
+        }
+    </style>
 </head>
 <body>
-
-
     <header>
         <div class="header">
             <img src="logo.jpg" alt="Logo de la empresa">
-	<h1>CALIDAD</h1> 
+            <h1>CALIDAD</h1>
  
-            <a href="sec1.html"><i class="fas fa-file"></i> BUENAS PRACTICAS</a>
-            <a href="sec2.html"><i class="fas fa-file"></i> FSC </a>
-	    <a href="sec3.html"><i class="fas fa-file"></i> EXAMEN </a>
-	    
-     
-	</div>
-<div class="container">
-
-        <section>
-
- <h2 align="center">¿QUÉ ES EL ÁREA DE CALIDAD?</h2>
-            <h5 align="center">Calidad se encarga de:</h5> 
-<ol>
-<li>Realizar evaluaciones de riesgos.</li>
-<li>Gestión de documentos.</li>
-<li>Realizar auditorías internas al sistema.</li>
-<li>Diseñar e implementar acciones correctivas de acuerdo con los hallazgos de auditoría.</li>
-<li>Administrar programas de auditoría.</li>
-<li>Implementar iniciativas de mejora.</li>
-</ol>
-<div style="text-align: center;">
-<img src="cal.jpg" alt="BPM">
-</div> 
-<p align="justify">El control de calidad tiene como principal función dar seguimiento a cada etapa del proceso productivo para detectar oportunamente posibles fallas en el producto. Y, en caso de presentarse alguna, aplicar las soluciones o mejoras necesarias que permitan el cumplimiento de requisitos y normas de cada prototipo</p>
- 			
-        </section>
-<p align="center">Haz <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPvaaWp0qliDR4E-puMyeHo9xOiXv76Uil81ZRDqfUCGPxGg/viewform?usp=sf_link">CLICK</a> para realizar el examen de CAPACITACION PARA CALIDAD</p>
-</div>
+            <div class="menu-container">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="mobile-menu">
+                    <a href="cal.html"><i class="fas fa-file"></i> INICIO </a>
+                    <a href="sec1.html"><i class="fas fa-file"></i> BUENAS PRACTICAS </a>
+                    <a href="sec2.html"><i class="fas fa-file"></i> FCS</a>
+                </div>
+                <a href="cal.html"><i class="fas fa-file"></i> INICIO </a>
+                <a href="sec1.html"><i class="fas fa-file"></i> BUENAS PRACTICAS </a>
+                <a href="sec2.html"><i class="fas fa-file"></i> FCS</a>
+            </div>
+        </div>
     </header>
 
+    <div class="container">
+        <section>
+            <h2>EXAMENES PARA DIFERENTES AREAS</h2>
+            <p align="justify">En esta sección de la página se pone a prueba los conocimientos de la persona a quien se le aplique. Es un cuestionario de 10 preguntas el cual está hecho en GOOGLE FORM y los resultados de la evaluación serán guardados.</p>
+            
+            <p>SELECCIONA EL ÁREA EN LA QUE ESTÁS PARA REALIZAR EL EXAMEN CORRESPONDIENTE</p>        
 
+            <ol>
+                <li><a class="button1" href="https://forms.gle/dELPviaBsrgbjRXo8">CLICK AQUI para comenzar el examen (ÁREA DE FACTURACIÓN).</a></li>
+                <br>
+                <li><a class="button1" href="https://forms.gle/PmMUYgKFLSuxvJpKA">CLICK AQUI para comenzar el examen (AREA DE IMPRESIÓN).</a> </li>
+                <br>
+                <li><a class="button1" href="https://forms.gle/SmSW4iB6RDFym3yWA">CLICK AQUI para comenzar el examen (AREA DE RECURSOS HUMANOS).</a> </li>
+                <br>
+                <li><a class="button1" href="https://forms.gle/MTzs8r3vDeVP8Rb58">CLICK AQUI para comenzar el examen (AREA DE ALMACEN).</a> </li>
+                <br>
+                <li><a class="button1" href="https://forms.gle/6L1TQC2RtPngfN5D8">CLICK AQUI para comenzar el examen (AREA DE HIGIENE Y SEGURIDAD).</a> </li>
+                <br>
+                <li><a class="button1" href="https://forms.gle/Uh5oEX5VgbRZrLGB9">CLICK AQUI para comenzar el examen (AREA DE COMPRAS).</a> </li>
+                <br>
+                <li><a class="button1" href="https://forms.gle/2qoxX5HfS6529DT27">CLICK AQUI para comenzar el examen(AREA DE VENTAS).</a> </li>
+            </ol>
+        </section>
+    </div>
 
+    <footer>
+        <strong>REALIZADA POR JONATHAN PAZ GALLARDO</strong>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
 </body>
-<footer>
-<strong>REALIZADA POR JONATHAN PAZ GALLARDO</strong>
-</footer>
 </html>
