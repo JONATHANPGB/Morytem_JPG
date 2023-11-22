@@ -178,67 +178,92 @@
             background: -webkit-radial-gradient(200px top, ellipse,  #FFAA00, #FF6100, #FF0000);
         }
 
-        @media only screen and (min-width: 480px) and (max-width: 991px) {
-            .header {
-                flex-direction: column;
-                text-align: center;
-                align-items: center; 
-            }
-
-            .header h1 {
-                margin-top: 10px;
-                margin-bottom: 10px; 
-            }
-
-            .header .logo img {
-                margin-bottom: 10px;
-            }
-
-            .button-container {
-                margin-bottom: 20px;
-            }
-
-            .container {
-                padding: 10px;
-                height: auto;
-                width: auto;
-            }
+         .navbar {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            display: none;
         }
 
-        @media only screen and (max-width: 991px) {
-            .header a {
-                display: none; /* Oculta los enlaces estilo botón en pantallas pequeñas */
+        .navbar a {
+            display: block;
+            padding: 10px 0;
+            color: #000; /* Añadido para cambiar el color del texto del enlace */
+            text-decoration: none; /* Añadido para quitar la subraya del enlace */
+        }
+
+        .menu-toggle {
+            display: block;
+            color: #fff;
+            font-size: 24px;
+            margin-left: auto;
+            cursor: pointer;
+		top
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0);
+            color: #fff;
+            padding: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header a {
+            color: #FFF;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            transition: all 0.7s ease;
+        }
+
+        .header a:hover {
+            background-color: #C11A1A;
+            border: 1px solid #C11A1A;
+        }
+
+        @media screen and (min-width: 769px) {
+            .navbar {
+                display: none;
             }
 
-            .burger-menu {
-                display: block; /* Muestra el botón de hamburguesa en pantallas pequeñas */
+            .header {
+                display: flex;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <img src="logo.jpg" alt="Logo de la empresa">
-            <h1>CALIDAD</h1>
- 
-            <div class="menu-container">
-                <div class="burger-menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <div class="mobile-menu">
-                    <a href="cal.html"><i class="fas fa-file"></i> INICIO </a>
-                    <a href="sec1.html"><i class="fas fa-file"></i> BUENAS PRACTICAS </a>
-                    <a href="sec2.html"><i class="fas fa-file"></i> FCS</a>
-                </div>
-                <a href="cal.html"><i class="fas fa-file"></i> INICIO </a>
-                <a href="sec1.html"><i class="fas fa-file"></i> BUENAS PRACTICAS </a>
-                <a href="sec2.html"><i class="fas fa-file"></i> FCS</a>
-            </div>
+        <header class="header">
+<img src="logo.jpg" alt="Logo de la empresa">
+        <h1>CALIDAD</h1> 
+
+
+    <div class="header">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
-    </header>
+        <nav class="navbar">
+            <a href="sec1.html"><i class="fas fa-file"></i> BUENAS PRACTICAS</a>
+            <a href="sec2.html"><i class="fas fa-file"></i> FSC </a>
+            <a href="sec3.html"><i class="fas fa-file"></i> EXAMEN </a>
+        </nav>
+    </div>
+</header>
 
     <div class="container">
         <section>
