@@ -7,25 +7,167 @@
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <style>
-        /* Estilos globales */
         body {
             font-family: 'Verdana', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-            background-image: url('fondo1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+	    background-image: url('fondo1.jpg');
+	    background-size: cover; 
+	    background-repeat: no-repeat; 
+	    background-attachment: fixed; 
         }
 
         /* Encabezado */
         .header {
+            background-color: rgba(255, 255, 255, 0);
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header a {
+            color: #FFF;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            transition: all 0.7s ease;
+        }
+
+        .header a:hover {
+            background-color: #C11A1A;
+            border: 1px solid #C11A1A;
+        }
+
+        /* Tabla */
+        .table-container {
+            margin: 20px;
+            width: 100%;
+            overflow: auto;
+            max-height: 500px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .table th,
+        .table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        .table th {
+            background-color: #333;
+            color: #fff;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Botones */
+        .button-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.7s ease;
+        }
+
+        .button:hover {
+            background-color: #1e7e34;
+        }
+
+        /* Pie de Página */
+        footer {
+		background-color: rgba(255, 255, 255, 0);
+            color: #000000;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+        }
+	.container 
+	{
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgb(223, 128, 0);
+		border-radius: 20px; 
+        }
+.rotating-element {
+  width: 800px;
+  height: 30px;
+  line-height: 300px;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.rotating-element:hover {
+  transform: rotateY(360deg); 
+    
+.container h2{
+    background-image: linear-gradient(to right, #FF3300, #FF6600, #FF9900, #FFCC00, #FFFF00);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+        /* Menú de navegación receptivo */
+        .navbar {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
             display: none;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 10px 0;
+            color: #000; /* Añadido para cambiar el color del texto del enlace */
+            text-decoration: none; /* Añadido para quitar la subraya del enlace */
+        }
+
+        .menu-toggle {
+            display: block;
+            color: #fff;
+            font-size: 24px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .header {
+            display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: rgba(255, 255, 255, 0);
@@ -54,31 +196,6 @@
             border: 1px solid #C11A1A;
         }
 
-        /* Menú de navegación receptivo */
-        .navbar {
-            display: flex;
-            background-color: rgba(255, 255, 255, 0.9);
-            position: absolute;
-            top: 80px;
-            width: 100%;
-            flex-direction: column;
-            text-align: center;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .navbar a {
-            display: block;
-            padding: 10px 0;
-        }
-
-        .menu-toggle {
-            display: block;
-            color: #fff;
-            font-size: 24px;
-            margin-right: 20px;
-            cursor: pointer;
-        }
-
         @media screen and (min-width: 769px) {
             .navbar {
                 display: none;
@@ -87,33 +204,6 @@
             .header {
                 display: flex;
             }
-        }
-
-        /* Contenido adicional... */
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgb(223, 128, 0);
-            border-radius: 20px;
-        }
-
-        .rotating-element {
-            width: 800px;
-            height: 30px;
-            line-height: 300px;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .rotating-element:hover {
-            transform: rotateY(360deg);
-        }
-
-        .container h2 {
-            background-image: linear-gradient(to right, #FF3300, #FF6600, #FF9900, #FFCC00, #FFFF00);
-            -webkit-background-clip: text;
-            color: transparent;
         }
     </style>
 </head>
@@ -132,12 +222,10 @@
                 <a href="sec3.html"><i class="fas fa-file"></i> EXAMEN </a>
             </nav>
         </div>
-        <!-- ... Contenido actual ... -->
     </header>
 
     <div class="container">
         <section>
-            <!-- Contenido actual ... -->
             <h2 align="center">¿QUÉ ES EL ÁREA DE CALIDAD?</h2>
             <h5 align="center">Calidad se encarga de:</h5>
             <ol>
@@ -160,11 +248,11 @@
         <strong>REALIZADA POR JONATHAN PAZ GALLARDO</strong>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.menu-toggle').click(function () {
-                $('.navbar').toggleClass('active');
+                $('.navbar').slideToggle();
             });
         });
     </script>
