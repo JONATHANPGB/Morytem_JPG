@@ -138,29 +138,72 @@
             height: auto; 
         }
 
+  /* Menú de navegación receptivo */
+        .navbar {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 10px 0;
+            color: #000; /* Añadido para cambiar el color del texto del enlace */
+            text-decoration: none; /* Añadido para quitar la subraya del enlace */
+        }
+
+        .menu-toggle {
+            display: block;
+            color: #fff;
+            font-size: 24px;
+            margin-left: auto;
+            cursor: pointer;
+		top
+        }
+
+        @media screen and (min-width: 769px) {
+            .navbar {
+                display: none;
+            }
+
+            .header {
+                display: flex;
+            }
+        }
     </style>
 
 </head>
 <body>
-    <header>
-        <div class="header">
-            <img src="logo.jpg" alt="Logo de la empresa">
-	<h1>CALIDAD</h1>
- 
+  <header class="header">
+<img src="logo.jpg" alt="Logo de la empresa">
+        <h1>CALIDAD</h1> 
+
+
+    <div class="header">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar">
             <a href="cal.html"><i class="fas fa-file"></i> INICIO</a>
-            <a href="sec1.html"><i class="fas fa-file"></i> BUENAS PRACTICAS</a>
-	    <a href="sec3.html"><i class="fas fa-file"></i> EXAMEN </a>
-	</div>
+	    <a href="sec2.html"><i class="fas fa-file"></i> BPM </a>	
+            <a href="sec2.html"><i class="fas fa-file"></i> FSC </a>
+            <a href="sec3.html"><i class="fas fa-file"></i> EXAMEN </a>
+        </nav>
+    </div>
+</header>
 <div class="container">
         <section>
             <h2>FSC</h2>
 	
-<iframe width="760px" height="500px" src="https://sway.office.com/s/muJ4L5RyyETmA7f3/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>	
+<iframe width="auto" height="auto" src="https://sway.office.com/s/muJ4L5RyyETmA7f3/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>	
 </section>
-
 </div>
-    </header>
-
 </body>
 <footer>
 <strong>REALIZADA POR JONATHAN PAZ GALLARDO</strong>
