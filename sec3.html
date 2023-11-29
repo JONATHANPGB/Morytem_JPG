@@ -23,9 +23,13 @@
 
         /* Encabezado */
         .header {
-            background-color: rgba(255, 255, 255, 0);
-            color: #fff;
-            padding: 10px;
+	background-color: rgba(255, 255, 255, 0);
+            background-image: url
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            color: #fff; 
+            padding: 3px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -40,8 +44,8 @@
         .header a {
             color: #FFF;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
+            margin: 0 2px;
+            padding: 3px 6px;
             border: 1px solid #fff;
             border-radius: 4px;
             transition: all 0.7s ease;
@@ -51,7 +55,6 @@
             background-color: #C11A1A;
             border: 1px solid #C11A1A;
         }
-
         /* Tabla */
         .table-container {
             margin: 20px;
@@ -156,7 +159,7 @@ object-fit: cover;
 
         .navbar a {
             display: block;
-            padding: 10px 0;
+            padding: 2px 0;
             color: #000; /* Añadido para cambiar el color del texto del enlace */
             text-decoration: none; /* Añadido para quitar la subraya del enlace */
         }
@@ -164,40 +167,9 @@ object-fit: cover;
         .menu-toggle {
             display: block;
             color: #fff;
-            font-size: 24px;
+            font-size: 20px;
             margin-left: auto;
             cursor: pointer;
-		top
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0);
-            color: #fff;
-            padding: 10px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .header .logo img {
-            width: 100px;
-            height: auto;
-        }
-
-        .header a {
-            color: #FFF;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
-            border: 1px solid #fff;
-            border-radius: 4px;
-            transition: all 0.7s ease;
-        }
-
-        .header a:hover {
-            background-color: #C11A1A;
-            border: 1px solid #C11A1A;
         }
 
         @media screen and (min-width: 769px) {
