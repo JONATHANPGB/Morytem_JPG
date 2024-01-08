@@ -1,16 +1,17 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAGINA DE INICIO</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-    <link rel="icon" href="favicon.png" type="image/x-icon"> 
-<style>
-        /* Estilos globales */
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
         body {
             font-family: 'Verdana', sans-serif;
             margin: 0;
@@ -23,10 +24,14 @@
         }
 
         /* Encabezado */
-        .header {
-            background-color: rgba(255, 255, 255, 0);
-            color: #fff;
-            padding: 10px;
+         .header {
+	background-color: rgba(255, 255, 255, 0);
+            background-image: url
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            color: #fff; 
+            padding: 3px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,8 +46,8 @@
         .header a {
             color: #FFF;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
+            margin: 0 2px;
+            padding: 3px 6px;
             border: 1px solid #fff;
             border-radius: 4px;
             transition: all 0.7s ease;
@@ -52,6 +57,7 @@
             background-color: #C11A1A;
             border: 1px solid #C11A1A;
         }
+
 
         /* Tabla */
         .table-container {
@@ -135,53 +141,111 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+.container img
+{
+object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+        /* Menú de navegación receptivo */
+       .navbar {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 2px 0;
+            color: #000; /* Añadido para cambiar el color del texto del enlace */
+            text-decoration: none; /* Añadido para quitar la subraya del enlace */
+        }
+
+        .menu-toggle {
+            display: block;
+            color: #fff;
+            font-size: 20px;
+            margin-left: auto;
+            cursor: pointer;
+        }
 
 
-</style>
+      
+        @media screen and (min-width: 769px) {
+            .navbar {
+                display: none;
+            }
 
+            .header {
+                display: flex;
+            }
+		.ima .cal img{
+		width:300px;
+		height:200px;
+		}	
+        }
+    </style>
 </head>
+
 <body>
+    <header class="header">
+<img src="logo.jpg" alt="Logo de la empresa">
+        <h3>CALIDAD</h3> 
 
 
-    <header>
-        <div class="header">
-            <img src="logo.jpg" alt="Logo de la empresa">
-	<h1>CALIDAD</h1> 
- 
-            <a href="sec1.html"><i class="fas fa-file"></i> BUENAS PRACTICAS</a>
-            <a href="sec2.html"><i class="fas fa-file"></i> FSC </a>
-	    <a href="sec3.html"><i class="fas fa-file"></i> EXAMEN </a>
-	    
-     
-	</div>
-<div class="container">
+    <div class="header">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <a href="sec1.html"><i class="fas fa-file"></i>BPM</a>
+            <a href="sec2.html"><i class="fas fa-file"></i>FSC</a>
+            <a href="sec3.html"><i class="fas fa-file"></i>TEST</a>
+        </nav>
+    </div>
+</header>
 
+    <div class="container">
         <section>
-
- <h2 align="center">¿QUÉ ES EL ÁREA DE CALIDAD?</h2>
-            <h5 align="center">Calidad se encarga de:</h5> 
-<ol>
-<li>Realizar evaluaciones de riesgos.</li>
-<li>Gestión de documentos.</li>
-<li>Realizar auditorías internas al sistema.</li>
-<li>Diseñar e implementar acciones correctivas de acuerdo con los hallazgos de auditoría.</li>
-<li>Administrar programas de auditoría.</li>
-<li>Implementar iniciativas de mejora.</li>
-</ol>
-<div style="text-align: center;">
-<img src="cal.jpg" alt="BPM">
-</div> 
-<p align="justify">El control de calidad tiene como principal función dar seguimiento a cada etapa del proceso productivo para detectar oportunamente posibles fallas en el producto. Y, en caso de presentarse alguna, aplicar las soluciones o mejoras necesarias que permitan el cumplimiento de requisitos y normas de cada prototipo</p>
- 			
+            <h2 align="center">¿QUÉ ES EL ÁREA DE CALIDAD?</h2>
+            <h5 align="center">Calidad se encarga de:</h5>
+            <ol>
+                <li>Realizar evaluaciones de riesgos.</li>
+                <li>Gestión de documentos.</li>
+                <li>Realizar auditorías internas al sistema.</li>
+                <li>Diseñar e implementar acciones correctivas de acuerdo con los hallazgos de auditoría.</li>
+                <li>Administrar programas de auditoría.</li>
+                <li>Implementar iniciativas de mejora.</li>
+            </ol>
+		<div class="ima">
+            <div style="text-align: center;">
+                <img src="cal.jpg" alt="BPM">
+            </div>
+		</div>
+            <p align="justify">El control de calidad tiene como principal función dar seguimiento a cada etapa del proceso productivo para detectar oportunamente posibles fallas en el producto. Y, en caso de presentarse alguna, aplicar las soluciones o mejoras necesarias que permitan el cumplimiento de requisitos y normas de cada prototipo</p>
         </section>
-<p align="center">Haz <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPvaaWp0qliDR4E-puMyeHo9xOiXv76Uil81ZRDqfUCGPxGg/viewform?usp=sf_link">CLICK</a> para realizar el examen de CAPACITACION PARA CALIDAD</p>
-</div>
-    </header>
+        <p align="center">Haz <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPvaaWp0qliDR4E-puMyeHo9xOiXv76Uil81ZRDqfUCGPxGg/viewform?usp=sf_link">CLICK</a> para realizar el examen de CAPACITACION PARA CALIDAD</p>
+    </div>
 
+    <footer>
+        <strong>REALIZADA POR JONATHAN PAZ GALLARDO</strong>
+    </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.navbar').slideToggle();
+            });
+        });
+    </script>
 </body>
-<footer>
-<strong>REALIZADA POR JONATHAN PAZ GALLARDO</strong>
-</footer>
+
 </html>
