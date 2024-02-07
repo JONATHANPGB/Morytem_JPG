@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>Trazabilidad</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://www.upsoftware.com.ar/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed de los comentarios" href="https://www.upsoftware.com.ar/blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comentario Trazabilidad del feed" href="https://www.upsoftware.com.ar/blog/trazabilidad-2/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.upsoftware.com.ar\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://www.upsoftware.com.ar/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.upsoftware.com.ar/blog/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='amphibious-bootstrap-grid-css' href='https://www.upsoftware.com.ar/blog/wp-content/themes/amphibious/css/bootstrap-grid.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-css' href='https://www.upsoftware.com.ar/blog/wp-content/themes/amphibious/css/fontawesome-all.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='amphibious-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C400i%2C700%2C700i%7CRubik%3A400%2C400i%2C700%2C700i&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='amphibious-style-css' href='https://www.upsoftware.com.ar/blog/wp-content/themes/amphibious/style.css?ver=6.1' type='text/css' media='all' />
+<style id='amphibious-style-inline-css' type='text/css'>
+.blog .posted-on,.archive .posted-on,.search .posted-on,.blog .cat-links,.archive .cat-links,.search .cat-links,.blog .byline,.archive .byline,.search .byline,.blog .comments-link,.archive .comments-link,.search .comments-link,.archive-title-control,.credits-designer { clip: rect(1px, 1px, 1px, 1px); position: absolute; }
+</style>
+<script type='text/javascript' src='https://www.upsoftware.com.ar/blog/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.upsoftware.com.ar/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://www.upsoftware.com.ar/blog/wp-json/" /><link rel="alternate" type="application/json" href="https://www.upsoftware.com.ar/blog/wp-json/wp/v2/posts/212" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.upsoftware.com.ar/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.upsoftware.com.ar/blog/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1" />
+<link rel="canonical" href="https://www.upsoftware.com.ar/blog/trazabilidad-2/" />
+<link rel='shortlink' href='https://www.upsoftware.com.ar/blog/?p=212' />
+<link rel="alternate" type="application/json+oembed" href="https://www.upsoftware.com.ar/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.upsoftware.com.ar%2Fblog%2Ftrazabilidad-2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.upsoftware.com.ar/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.upsoftware.com.ar%2Fblog%2Ftrazabilidad-2%2F&#038;format=xml" />
+<link rel="pingback" href="https://www.upsoftware.com.ar/blog/xmlrpc.php">
+	
+	<link rel="icon" href="https://www.upsoftware.com.ar/blog/wp-content/uploads/2020/05/favicon.ico" sizes="32x32" />
+<link rel="icon" href="https://www.upsoftware.com.ar/blog/wp-content/uploads/2020/05/favicon.ico" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.upsoftware.com.ar/blog/wp-content/uploads/2020/05/favicon.ico" />
+<meta name="msapplication-TileImage" content="https://www.upsoftware.com.ar/blog/wp-content/uploads/2020/05/favicon.ico" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47834957-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47834957-3');
+</script>
+</head>
+<body data-rsssl=1 class="post-template-default single single-post postid-212 single-format-standard wp-custom-logo has-site-branding has-wide-layout has-right-sidebar">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="page" class="site-wrapper site">
+	<a class="skip-link screen-reader-text" href="#content">Saltar al contenido</a>
+
+	
+<header id="masthead" class="site-header">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+
+				<div class="site-header-inside-wrapper">
+					
+<div class="site-branding-wrapper">
+	<div class="site-logo-wrapper"><a href="https://www.upsoftware.com.ar/blog/" class="custom-logo-link" rel="home"><img width="549" height="134" src="https://www.upsoftware.com.ar/blog/wp-content/uploads/2020/05/cropped-Logo-UpSofware-6.png" class="custom-logo" alt="" decoding="async" srcset="https://www.upsoftware.com.ar/blog/wp-content/uploads/2020/05/cropped-Logo-UpSofware-6.png 549w, https://www.upsoftware.com.ar/blog/wp-content/uploads/2020/05/cropped-Logo-UpSofware-6-300x73.png 300w" sizes="(max-width: 549px) 100vw, 549px" /></a></div>
+	<div class="site-branding">
+					<p class="site-title"><a href="https://www.upsoftware.com.ar/blog/" title="" rel="home"></a></p>
+		
+				<p class="site-description">
+			Claves Para Producir Con Rentabilidad		</p>
+			</div>
+</div><!-- .site-branding-wrapper -->
+
+<nav id="site-navigation" class="main-navigation">
+	<div class="main-navigation-inside">
+		<div class="toggle-menu-wrapper">
+			<a href="#header-menu-responsive" title="Menú" class="toggle-menu-control">
+				<span class="toggle-menu-label">Menú</span>
+			</a>
+		</div>
+
+		<div id="menu-1" class="site-header-menu-wrapper site-header-menu-responsive-wrapper"><ul class="site-header-menu site-header-menu-responsive">
+<li ><a href="https://www.upsoftware.com.ar/blog/">Inicio</a></li><li class="page_item page-item-8"><a href="https://www.upsoftware.com.ar/blog/acerca-de/">Acerca de</a></li>
+<li class="page_item page-item-10 current_page_parent"><a href="https://www.upsoftware.com.ar/blog/blog/">Blog</a></li>
+<li class="page_item page-item-9"><a href="https://www.upsoftware.com.ar/blog/contacto/">Contacto</a></li>
+</ul></div>
+	</div><!-- .main-navigation-inside -->
+</nav><!-- .main-navigation -->
+				</div><!-- .site-header-inside-wrapper -->
+
+			</div><!-- .col -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<div class="site-content-inside">
+		<div class="container">
+			<div class="row">
+
+				<div id="primary" class="content-area col-16 col-sm-16 col-md-16 col-lg-11 col-xl-11 col-xxl-11">
+					<main id="main" class="site-main">
+
+						<div id="post-wrapper" class="post-wrapper post-wrapper-single post-wrapper-single-post">
+												
+							
+<div class="post-wrapper-hentry">
+	<article id="post-212" class="post-212 post type-post status-publish format-standard hentry category-uncategorized">
+		<div class="post-content-wrapper post-content-wrapper-single post-content-wrapper-single-post">
+
+			
+			<div class="entry-data-wrapper">
+				<div class="entry-header-wrapper">
+					<header class="entry-header">
+						<h1 class="entry-title">Trazabilidad</h1>					</header><!-- .entry-header -->
+
+					<div class="entry-meta entry-meta-header-after">
+						<span class="byline entry-meta-icon">por <span class="author vcard"><a class="entry-author-link url fn n" href="https://www.upsoftware.com.ar/blog/author/admin/" rel="author"><span class="entry-author-name">admin</span></a></span></span><span class="posted-on entry-meta-icon"><span class="screen-reader-text">Publicada el</span><a href="https://www.upsoftware.com.ar/blog/trazabilidad-2/" rel="bookmark"><time class="entry-date published" datetime="2023-06-30T18:36:24+00:00">30/06/2023</time><time class="updated" datetime="2023-06-30T18:49:02+00:00">30/06/2023</time></a></span>					</div><!-- .entry-meta -->
+				</div><!-- .entry-header-wrapper -->
+
+				<div class="entry-content">
+					
+<p class="has-medium-font-size" style="font-style:normal;font-weight:400">En los últimos años, debido a la mejora de la calidad de los productos y al aumento de regulaciones alimentarias, la trazabilidad ha adquirido cada vez más importancia y se ha extendido a una amplia variedad de industrias.</p>
+
+
+
+<h2 class="has-x-large-font-size"><img decoding="async" src="https://lh5.googleusercontent.com/Vp0Vb3APp2Uo31FtpXV1VJ5qYaaEv60hEXdkrnobAzZWhMiDfqDWOf8m7dk4qFzAEOrptBgy6Dg1RZHI42hEfUwCC8gH8Jz6RokLXzXjFV0X8dFiagIZ0fG7oWC0HA362kmafncKuPvhnK9Ewj3eNxA" style="width: 800px;"></h2>
+
+
+
+<p class="has-medium-font-size">En la industria del packaging, por ejemplo, la trazabilidad ocupa un papel relevante en el sistema de gestión de calidad de las&nbsp; empresas.&nbsp;Existen diferentes formas de realizar el registro de trazabilidad y&nbsp;de buscar esos registros.</p>
+
+
+
+<p class="has-medium-font-size">Aunque la tecnología está presente en nuestra vida diaria, muchas empresas aún registran la trazabilidad y la productividad de manera manual. Esto puede ocasionar errores en la carga de información y dificultades para consultar los registros.</p>
+
+
+
+<h2 class="has-medium-font-size" style="font-style:normal;font-weight:400"></h2>
+
+
+
+<h2 style="font-style:normal;font-weight:800">Trazabilidad en SisPro</h2>
+
+
+
+<p class="has-medium-font-size" style="font-style:normal;font-weight:400">A continuación veremos cómo una empresa que utiliza SisPro para el control de la producción, implementa el registro detallado de materias primas para llevar trazabilidad.</p>
+
+
+
+<h3 class="has-medium-font-size" style="font-style:normal;font-weight:400"><strong>REGISTRO DE ENTRADA DE MATERIA PRIMA</strong></h3>
+
+
+
+<p class="has-medium-font-size">Desde SisPro se genera una etiqueta única para la materia prima. Luego, esta etiqueta es escaneada utilizando un lector de códigos de barras al momento de ingresar la materia prima en los procesos.</p>
+
+
+
+<p class="has-medium-font-size"><strong>REGISTRO A TRAVÉS DE CÓDIGOS DE BARRA</strong></p>
+
+
+
+<p class="has-medium-font-size">Cada material cuenta con un código único que es escaneado para su identificación al momento de utilizarse.</p>
+
+
+
+<p class="has-medium-font-size" style="font-style:normal;font-weight:400"><strong>GENERACIÓN DE UN NUEVO PRODUCTO</strong></p>
+
+
+
+<p class="has-medium-font-size">Al generar un nuevo producto impreso, se le asigna un código de barra único que lo identifica. Simultáneamente, se registra un movimiento en el inventario dentro del sistema ERP.</p>
+
+
+
+<p class="has-medium-font-size"><strong>SEGUIMIENTO DE LOS MATERIALES UTILIZADOS</strong></p>
+
+
+
+<p class="has-medium-font-size">El código de la orden de producción permite realizar un seguimiento detallado de los materiales utilizados. Además, se puede determinar si dichos materiales fueron empleados en otros trabajos.</p>
+
+
+
+<h1 class="has-x-large-font-size"><img decoding="async" src="https://lh6.googleusercontent.com/2O9_UXcV3IbUa9IpNu1W0b1ysAmi7ISFeiaGaIbFcjepRIlb9cM3-yTsVAP5Gw6SbifoliDJZmSMRG7hA9aLqRvhHXTYRPd8Tmd726NeC6lN53vMymRSt4PN1WKZNFdp7y7lo405WZrTnr2vD6B5Wqk" style="width: 800px;"></h1>
+
+
+
+<h2 style="font-style:normal;font-weight:800">Trazabilidad en la Agroindustria | SofOS</h2>
+
+
+
+<p class="has-medium-font-size" style="font-style:normal;font-weight:400">Durante el proceso productivo, se consume la materia prima desde SisPro Terminal (Control de Producción Automático), lo que permite registrar qué máquina y qué operador están utilizando la materia prima. Al mismo tiempo, se generan rótulos de identificación para el siguiente proceso.</p>
+
+
+
+<p class="has-medium-font-size" style="font-style:normal;font-weight:400">De esta forma, todos los procesos quedan registrados y la información se puede consultar fácilmente cuando se necesite.</p>
+
+
+
+<h2 style="font-size:25px">Si desea obtener más información, puede visitar nuestro sitio web www.upsoftware.com.ar para conocer nuestro software y descubrir cómo puede lograr una mayor rentabilidad en su negocio.</h2>
+
+
+
+<p></p>
+
+
+
+<div class="is-content-justification-center is-layout-flex wp-container-1 wp-block-buttons">
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-vivid-cyan-blue-background-color has-text-color has-background wp-element-button" href="https://www.upsoftware.com.ar/#secContacto" target="_blank" rel="noreferrer noopener">DEMO GRATUITA</a></div>
+</div>
+
+
+
+<p></p>
+									</div><!-- .entry-content -->
+
+				<footer class="entry-meta entry-meta-footer">
+					<span class="cat-links cat-links-single">Publicado en <a href="https://www.upsoftware.com.ar/blog/category/uncategorized/" rel="category tag">Uncategorized</a></span>				</footer><!-- .entry-meta -->
+			</div><!-- .entry-data-wrapper -->
+
+		</div><!-- .post-content-wrapper -->
+	</article><!-- #post-## -->
+</div><!-- .post-wrapper-hentry -->
+
+							
+<div class="entry-author">
+	<div class="author-avatar">
+		<img alt='' src='https://secure.gravatar.com/avatar/cedc090a1addced01c9c3e1db50011cd?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/cedc090a1addced01c9c3e1db50011cd?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy' decoding='async'/>	</div><!-- .author-avatar -->
+
+	<div class="author-heading">
+		<h2 class="author-title">
+            Publicada por <span class="author-name">admin</span>        </h2>
+	</div><!-- .author-heading -->
+
+	<p class="author-bio">
+				<a class="author-link" href="https://www.upsoftware.com.ar/blog/author/admin/" rel="author">
+			Ver todas las entradas de admin		</a>
+	</p><!-- .author-bio -->
+</div><!-- .entry-auhtor -->
+
+							
+	<nav class="navigation post-navigation" aria-label="Entradas">
+		<h2 class="screen-reader-text">Navegación de entradas</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://www.upsoftware.com.ar/blog/la-personalizacion-de-productos-y-su-impacto-en-la-industria-de-packaging-retos-y-oportunidades-para-los-profesionales-del-sector/" rel="prev"><span class="meta-nav">Anterior</span> <span class="post-title">La personalización de productos y su impacto en la industria de packaging: Retos y oportunidades para los profesionales del sector</span></a></div><div class="nav-next"><a href="https://www.upsoftware.com.ar/blog/kpis-efectivos-exito-en-la-industria-de-la-conversion/" rel="next"><span class="meta-nav">Sig</span> <span class="post-title"><strong>KPIs efectivos: Éxito en la Industria de la Conversión</strong></span></a></div></div>
+	</nav>
+							
+<div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Deja una respuesta <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/trazabilidad-2/#respond" style="display:none;">Cancelar la respuesta</a></small></h3><form action="https://www.upsoftware.com.ar/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Guarda mi nombre, correo electrónico y web en este navegador para la próxima vez que comente.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar el comentario" /> <input type='hidden' name='comment_post_ID' value='212' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+
+												</div><!-- .post-wrapper -->
+
+					</main><!-- #main -->
+				</div><!-- #primary -->
+
+				<div id="site-sidebar" class="sidebar-area col-16 col-sm-16 col-md-16 col-lg-5 col-xl-5 col-xxl-5">
+	<div id="secondary" class="sidebar widget-area sidebar-widget-area" role="complementary">
+		
+		<aside id="recent-posts-3" class="widget widget_recent_entries">
+		<h2 class="widget-title">Indice Posts</h2>
+		<ul>
+											<li>
+					<a href="https://www.upsoftware.com.ar/blog/kpis-efectivos-exito-en-la-industria-de-la-conversion/"><strong>KPIs efectivos: Éxito en la Industria de la Conversión</strong></a>
+									</li>
+											<li>
+					<a href="https://www.upsoftware.com.ar/blog/trazabilidad-2/" aria-current="page">Trazabilidad</a>
+									</li>
+											<li>
+					<a href="https://www.upsoftware.com.ar/blog/la-personalizacion-de-productos-y-su-impacto-en-la-industria-de-packaging-retos-y-oportunidades-para-los-profesionales-del-sector/">La personalización de productos y su impacto en la industria de packaging: Retos y oportunidades para los profesionales del sector</a>
+									</li>
+											<li>
+					<a href="https://www.upsoftware.com.ar/blog/evento-exclusivo-la-revolucion-4-0-en-la-industria-del-packaging/">Evento Exclusivo: La revolución 4.0 en la industria del Packaging</a>
+									</li>
+											<li>
+					<a href="https://www.upsoftware.com.ar/blog/principales-errores-de-un-control-de-calidad-en-la-produccion-de-packaging/"><strong>Principales errores de un control de calidad en la producción de packaging</strong></a>
+									</li>
+					</ul>
+
+		</aside><aside id="text-2" class="widget widget_text"><h2 class="widget-title">Quienes Somos</h2>			<div class="textwidget"><p>Con presencia en latinoamérica y nos especializamos en el desarrollo de software para incrementar la productividad y rentabilidad de nuestros clientes.</p>
+<p><a href="http://www.upsoftware.com.ar/#secNosotros">Conocer más</a></p>
+</div>
+		</aside>	</div><!-- .sidebar -->
+</div><!-- .col-* columns of main sidebar -->
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</div><!-- .site-content-inside -->
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer">
+		
+<div class="site-info">
+	<div class="site-info-inside">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col">
+					<div class="credits-wrapper">
+						<div class="credits credits-blog"></div><div class="credits credits-designer">Tema Amphibious de <a href="https://templatepocket.com" title="TemplatePocket">TemplatePocket</a> <span>&sdot;</span> Funciona con <a href="https://es.wordpress.org" title="WordPress">WordPress</a></div>					</div><!-- .credits -->
+				</div><!-- .col -->
+			</div><!-- .row -->
+
+		</div><!-- .container -->
+
+	</div><!-- .site-info-inside -->
+</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+</div><!-- #page .site-wrapper -->
+
+<div class="overlay-effect"></div><!-- .overlay-effect -->
+
+<style id='core-block-supports-inline-css' type='text/css'>
+.wp-block-buttons.wp-container-1{justify-content:center;}
+</style>
+<script type='text/javascript' src='https://www.upsoftware.com.ar/blog/wp-content/themes/amphibious/js/enquire.js?ver=2.1.6' id='enquire-js'></script>
+<script type='text/javascript' src='https://www.upsoftware.com.ar/blog/wp-content/themes/amphibious/js/fitvids.js?ver=1.1' id='fitvids-js'></script>
+<script type='text/javascript' src='https://www.upsoftware.com.ar/blog/wp-content/themes/amphibious/js/hover-intent.js?ver=r7' id='hover-intent-js'></script>
+<script type='text/javascript' src='https://www.upsoftware.com.ar/blog/wp-content/themes/amphibious/js/superfish.js?ver=1.7.10' id='superfish-js'></script>
+<script type='text/javascript' src='https://www.upsoftware.com.ar/blog/wp-includes/js/comment-reply.min.js?ver=6.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.upsoftware.com.ar/blog/wp-content/themes/amphibious/js/custom.js?ver=1.0' id='amphibious-custom-js'></script>
+</body>
+</html>
